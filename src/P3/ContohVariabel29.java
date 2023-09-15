@@ -3,7 +3,7 @@ package P3;
 public class ContohVariabel29 {
     public static void main(String[] args) {
         String hoby="Bermain Petak Umpet";
-        boolean pandai = true;
+        boolean ispandai = true;
         char jenisKelamin = 'L';
         byte umur = 20;
         double $ipk=3.24, tinggi= 1.78 ;
