@@ -9,7 +9,7 @@ public class ContohVariabel29 {
         double $ipk=3.24, tinggi= 1.78 ;
         
         System.out.println(hoby);
-        System.out.println("Apakah Pandai?"+ pandai);
+        System.out.println("Apakah Pandai?"+ ispandai);
         System.out.println("Jenis Kelamin:" + jenisKelamin);
         System.out.println("Umurku saat ini:"+ umur);
         System.out.println(String.format("saya beripk %s, dengan tinggi badan %s", $ipk,tinggi));
