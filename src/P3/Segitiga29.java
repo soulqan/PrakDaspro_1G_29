@@ -3,15 +3,15 @@ import java.util.Scanner;
 
 public class Segitiga29 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc29 = new Scanner(System.in);
 
         int alas, tinggi;
         float luas;
 
         System.out.println("Masukkan alas: ");
-        alas = sc.nextInt();
+        alas = sc29.nextInt();
         System.out.println("Masukkan tinggi: ");
-        tinggi = sc.nextInt();
+        tinggi = sc29.nextInt();
 
         luas = alas*tinggi /2;
 
