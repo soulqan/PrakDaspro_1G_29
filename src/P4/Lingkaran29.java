@@ -8,7 +8,7 @@ public class Lingkaran29 {
     int r;
     double keliling,luas,phi=3.14;
 
-    System.out.println("Masukkan jari-jari lingkaran: ");
+    System.out.println("Masukkan Jari-Jari lingkaran: ");
     r= input29.nextInt();
     keliling=2*phi*r;
     luas=phi*r*r;

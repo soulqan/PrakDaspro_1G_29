@@ -6,9 +6,9 @@ public class Gaji29 {
 
         int jmlMasuk,jmlTidakMasuk,totGaji,gaji=40000,potGaji=25000;
 
-        System.out.println("Masukkan jumlah hari anda masuk: ");
+        System.out.println("Masukkan Jumlah hari anda masuk: ");
         jmlMasuk=input29.nextInt();
-        System.out.println("Masukkan jumlah hari tidak masuk:" );
+        System.out.println("Masukkan Jumlah hari tidak masuk:" );
         jmlTidakMasuk=input29.nextInt();
         totGaji=(jmlMasuk*gaji*jmlTidakMasuk*potGaji);
         System.out.println("Gaji yang anda terima"+totGaji);
