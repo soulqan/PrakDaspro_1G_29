@@ -18,8 +18,11 @@ public class Pemilihan2Percobaan2_29 {
         if (totalSudut==180) {
             if (sudut1==90||sudut2==90||sudut3==90) {
                 System.out.println("segitiga siku siku");
-            }else
-            System.out.println("Bukan Segitiga Siku-Siku");
+            }else if((sudut1==70&&sudut2==70)||(sudut1==70&&sudut3==70)||(sudut2==70&&sudut3==70)){
+            System.out.println("Segitiga sama kaki");
+            }else {
+                System.out.println("Segitiga Sembarang");
+            }
         }else
             System.out.println("Bukan Segitiga");
         }
