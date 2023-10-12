@@ -20,6 +20,8 @@ public class Pemilihan2Percobaan2_29 {
                 System.out.println("segitiga siku siku");
             }else if((sudut1==70&&sudut2==70)||(sudut1==70&&sudut3==70)||(sudut2==70&&sudut3==70)){
             System.out.println("Segitiga sama kaki");
+            }else if (sudut1==sudut2&&sudut2==sudut3) {
+            System.out.println("Segitiga sama sisi");
             }else {
                 System.out.println("Segitiga Sembarang");
             }
