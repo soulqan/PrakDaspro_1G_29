@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class TugasP5 {
     public static void main(String[] args) {
-        Scanner input29 = new Scanner(System.in);
+        Scanner input14 = new Scanner(System.in);
         int opsiPengiriman, metodePembayaran;
 
         System.out.println("====== Pilihlah Opsi Pengiriman ======");
         System.out.println("1. JNT \n2. JNE \n3. GoJek \n4. Grab ");
         System.out.print("Pilihan: ");
-        opsiPengiriman = input29.nextInt();
+        opsiPengiriman = input14.nextInt();
 
         if (opsiPengiriman == 1) {
             System.out.println("Anda memilih opsi pengiriman JNT");
