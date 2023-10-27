@@ -1,4 +1,4 @@
-
+package P7;
 
 import java.util.Scanner;
 

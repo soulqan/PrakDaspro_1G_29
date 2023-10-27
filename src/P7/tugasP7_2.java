@@ -1,3 +1,4 @@
+package P7;
 import java.util.Scanner;
 
 public class tugasP7_2 {
