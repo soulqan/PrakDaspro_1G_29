@@ -11,8 +11,12 @@ public class ArrayNilai29 {
             System.out.print("Masukkan Nilai Akhir ke-" + i+ " : ");
             nilaiAkhir[i] = sc.nextInt();
         }
-        for (int i = 0; i<10; i++){
+        for (int i = 0; i < nilaiAkhir.length; i++){
+            if (nilaiAkhir[i]>70) {
+                
+            
             System.out.println("Nilai Akhir ke-"+i+" adalah "+nilaiAkhir[i]);
+            }
         }
     }
 }
