@@ -11,14 +11,23 @@ public class ArrayRataNilai29 {
     double rata2;
 
     for(int i = 0; i< nilaiMhs.length;i++){
-        System.out.println("Masukkan Nilai Ke-" + (i+1)+" : ");
+        System.out.println("Masukkan Nilai mahasiswa Ke-" + (i+1)+" : ");
         nilaiMhs[i] = sc.nextInt();
     }
     for (int i =0; i< nilaiMhs.length;i++){
         total+=nilaiMhs[i];
     }
     rata2 = total/nilaiMhs.length;
-    System.out.print("Rata-rata nilai = "+rata2);
+    System.out.println("Rata-rata nilai = "+rata2);
+
+    for (int i = 0; i < nilaiMhs.length; i++) {
+        if (nilaiMhs [i] > 70) {
+            System.out.println("Mahasiswa ke- "+(i+1)+ " Lulus");
+        }else{
+            System.out.println("Mahasiswa ke-"+(i+1)+" Tidak lulus");
+        }
+        
+    }
     }
 
 }
