@@ -33,7 +33,7 @@ public class BioskopWithScanner29 {
                 if (penonton[baris -1][kolom -1]==null) {
                 penonton[baris -1][kolom -1]= nama;   
                 }else{
-                    System.out.println("Kursi Sudah Terisi!");
+                    System.out.println("Kursi Sudah Terisi! atas nama: "+penonton[baris -1][kolom -1] +"memasukkan baris dan kolom kembali");
                 }
                 System.out.println("Input Penonton lainnya? (y/n): ");
                 next=sc29.next();
@@ -48,6 +48,8 @@ public class BioskopWithScanner29 {
                 for (int j = 0 ;j < penonton[i].length;j++ ) {
                     if (penonton[i][j] !=null){
                         System.out.println("Baris "+(i+1)+" Kolom "+(j+1)+ " : " + penonton[i][j] );
+                    }else{
+                        System.out.println("Baris "+(i+1)+" Kolom "+(j+1)+ " : " + null);
                     }
                 }
             }break;
