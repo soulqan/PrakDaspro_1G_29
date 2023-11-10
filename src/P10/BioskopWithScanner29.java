@@ -22,23 +22,26 @@ public class BioskopWithScanner29 {
         switch (menu) {
             case 1:
             for (int i = 0 ;i<penonton.length;i++){
-                
+                               
                 System.out.print("Input Nama Penonton: ");
                 nama=sc29.nextLine();
                 System.out.print("Masukkan Baris: ");
                 baris=sc29.nextInt();
                 System.out.print("Masukkan Kolom : ");
                 kolom=sc29.nextInt();
-                penonton[baris -1][kolom -1]= nama;
-              
-
+                
+                if (penonton[baris -1][kolom -1]==null) {
+                penonton[baris -1][kolom -1]= nama;   
+                }else{
+                    System.out.println("Kursi Sudah Terisi!");
+                }
                 System.out.println("Input Penonton lainnya? (y/n): ");
                 next=sc29.next();
                 sc29.nextLine();
                  if (next.equalsIgnoreCase("n")){
                      break;
-                 }    
-            }break;
+                 }
+                }break;
                 
             case 2:
             for (int i = 0 ;i<penonton.length;i++) {
