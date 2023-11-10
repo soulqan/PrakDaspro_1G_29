@@ -16,7 +16,7 @@ public class LinearSearch29 {
         }
         System.out.println("Masukkan key yang ingin dicari: ");
         int key=sc.nextInt();
-        for(int i = 0;i<arrayInt.length;i++){
+        for(int i = 0;i<arrayInt.length;i++){  
             if (arrayInt[i] == key){
                 hasil = i;
                 ishasil=true;
