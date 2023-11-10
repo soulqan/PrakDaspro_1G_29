@@ -49,7 +49,7 @@ public class BioskopWithScanner29 {
                     if (penonton[i][j] !=null){
                         System.out.println("Baris "+(i+1)+" Kolom "+(j+1)+ " : " + penonton[i][j] );
                     }else{
-                        System.out.println("Baris "+(i+1)+" Kolom "+(j+1)+ " : " + null);
+                        System.out.println("Baris "+(i+1)+" Kolom "+(j+1)+ " : " + "***");
                     }
                 }
             }break;
