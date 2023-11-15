@@ -85,7 +85,7 @@ public class ArrayDua29 {
         for (int i = 0; i < data.length; i++) {
             System.out.println("Data ke-" + (i + 1) + ": " + data[i][2]);
         }
-
+        System.out.println("Index UV maksimum: " + max[3]);
         System.out.printf("Rata-rata suhu: %.2f\n", rata[0]);
         System.out.printf("Persetase kelembaban terendah: %s\n", min[1]);
     }
