@@ -1,5 +1,4 @@
 package P11;
-
 import java.util.Scanner;
 
 public class ArrayDua29 {
@@ -8,6 +7,7 @@ public class ArrayDua29 {
         int data[][] = new int[4][4];
         int jam[] = { 2, 6, 9, 12 };
         int min[] = { 100, 100, 100, 100 };
+        int max[] = { -100, -100, -100, -100 }; // Nilai awal yang kecil untuk pencarian maksimum
         double[] total = { 0, 0, 0, 0 };
         double[] rata = { 0, 0, 0, 0 };
 
@@ -21,6 +21,9 @@ public class ArrayDua29 {
                         if (min[j] > data[i][j]) {
                             min[j] = data[i][j];
                         }
+                        if (max[j] < data[i][j]) {
+                            max[j] = data[i][j];
+                        }
                         total[j] += data[i][j];
                         break;
                     case 1:
@@ -28,6 +31,9 @@ public class ArrayDua29 {
                         data[i][j] = sc29.nextInt();
                         if (min[j] > data[i][j]) {
                             min[j] = data[i][j];
+                        }
+                        if (max[j] < data[i][j]) {
+                            max[j] = data[i][j];
                         }
                         total[j] += data[i][j];
                         break;
@@ -37,6 +43,9 @@ public class ArrayDua29 {
                         if (min[j] > data[i][j]) {
                             min[j] = data[i][j];
                         }
+                        if (max[j] < data[i][j]) {
+                            max[j] = data[i][j];
+                        }
                         total[j] += data[i][j];
                         break;
                     case 3:
@@ -45,14 +54,25 @@ public class ArrayDua29 {
                         if (min[j] > data[i][j]) {
                             min[j] = data[i][j];
                         }
+                        if (max[j] < data[i][j]) {
+                            max[j] = data[i][j];
+                        }
                         total[j] += data[i][j];
                         break;
-
                 }
                 rata[j] = total[j] / data[0].length;
-            }
-        }
+                   }
+}
+        
+        // Menampilkan nilai maksimum dari setiap parameter
         System.out.println("---------------");
+        System.out.println("Nilai Maksimum:");
+        System.out.println("Suhu maksimum: " + max[0]);
+        System.out.println("Kelembaban maksimum: " + max[1]);
+        System.out.println("Kecepatan angin maksimum: " + max[2]);
+        System.out.println("Index UV maksimum: " + max[3]);
+
+      System.out.println("---------------");
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[0].length; j++) {
                 System.out.print(data[i][j] + " ");
