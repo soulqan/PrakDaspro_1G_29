@@ -3,15 +3,8 @@ package P13;
 import java.util.Scanner;
 
 public class tugas2 {
-    static int[][] nilai = {
-        {20, 19, 25, 20, 10, 0, 10},
-        {30, 30, 40, 10, 15, 20, 25},
-        {5, 0, 20, 25, 10, 5, 45},
-        {50, 0, 7, 8, 0, 30, 60},
-        {15, 10, 16, 15, 10, 10, 5}
-    };
-    static String[] nama = {"Sari", "Rina", "Yani", "Dwi", "Lusi"};
-
+    static int[][] nilai;
+    static String[] nama;
     // Fungsi untuk menampilkan seluruh nilai mahasiswa dari minggu pertama sampai ketujuh
     static void tampilkanNilaiMahasiswa() {
         for (int i = 0; i < nama.length; i++) {
@@ -70,22 +63,35 @@ public class tugas2 {
         }
     }
 
-    // Fungsi untuk menambahkan data nilai mahasiswa
-    static void tambahDataNilai() {
+    static void inputJumlahMahasiswaDanTugas() {
         Scanner scanner = new Scanner(System.in);
 
-        for (int i = 0; i < nama.length; i++) {
-            System.out.println("Masukkan nilai untuk mahasiswa " + nama[i] + ":");
-            for (int j = 0; j < nilai[i].length; j++) {
-                System.out.print("Minggu ke-" + (j + 1) + ": ");
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumlahMahasiswa = scanner.nextInt();
+        System.out.print("Masukkan jumlah tugas: ");
+        int jumlahTugas = scanner.nextInt();
+
+        nilai = new int[jumlahMahasiswa][jumlahTugas];
+        nama = new String[jumlahMahasiswa];
+
+        scanner.nextLine(); // Membersihkan buffer
+
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            System.out.print("Masukkan nama mahasiswa ke-" + (i + 1) + ": ");
+            nama[i] = scanner.nextLine();
+            for (int j = 0; j < jumlahTugas; j++) {
+                System.out.print("Masukkan nilai mahasiswa tugas ke-"+(j+1)+": ");
                 nilai[i][j] = scanner.nextInt();
+                scanner.nextLine();
+                
             }
         }
+
         scanner.close();
     }
 
     public static void main(String[] args) {
-        // Contoh pemanggilan fungsi
+        inputJumlahMahasiswaDanTugas();
         tampilkanNilaiMahasiswa();
         cariHariNilaiTertinggi();
         tampilkanMahasiswaNilaiTertinggi();
