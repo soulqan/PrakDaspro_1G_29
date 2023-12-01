@@ -95,6 +95,5 @@ public class tugas2 {
         tampilkanNilaiMahasiswa();
         cariHariNilaiTertinggi();
         tampilkanMahasiswaNilaiTertinggi();
-        // Untuk menambahkan data nilai gunakan fungsi tambahDataNilai()
     }
 }
