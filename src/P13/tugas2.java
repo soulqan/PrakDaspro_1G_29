@@ -19,7 +19,6 @@ public class tugas2 {
     // Fungsi untuk mencari hari keberapakah terdapat nilai tertinggi dibanding hari lain dari keseluruhan mahasiswa
     static void cariHariNilaiTertinggi() {
         int[] totalNilaiPerHari = new int[nilai[0].length];
-
         // Menghitung total nilai per hari dari semua mahasiswa
         for (int i = 0; i < nilai.length; i++) {
             for (int j = 0; j < nilai[i].length; j++) {
